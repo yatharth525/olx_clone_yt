@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const port = 4000
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://upscies159:dxEgjkCSeeDxIpux@cluster0.yldt1nc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb_url')
 
 app.get('/', (req, res) => {
     res.send('hello...')
